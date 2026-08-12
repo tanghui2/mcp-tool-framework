@@ -1,0 +1,19 @@
+[server]
+name = "mcp-server"
+host = "localhost"
+port = 8080
+transport = "inprocess"
+
+[llm]
+model = "qwen3.7-plus"
+base_url = "https://dashscope.aliyuncs.com/compatible-mode/v1"
+api_key = "your-api-key-here"
+max_tokens = 4096
+temperature = 0.2
+timeout = 60
+
+[tool]
+timeout = 30
+max_retries = 3
+enable_cache = true
+cache_ttl = 300
